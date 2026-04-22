@@ -21,10 +21,26 @@ The primary goal of this project is to analyze clinical trial dynamics surroundi
 - **Dynamic Visuals**: Re-rendered graphics that guarantee NO overlapping labels or cut-off legends.
 - **Structured Outputs**: Extracts structured `.csv` reports highlighting categorical/numeric insights immediately upon execution.
 - **Reproducible Storage**: Seamless connection string mappings that output direct database frames for remote fetching.
+- **Interactive Dashboard**: A fully featured Streamlit app that provides exploratory visualizations.
+- **Machine Learning**: An embedded predictive model (Random Forest Classifier) to estimate the completion rate of clinical trials given specific trial features.
 
 ## Usage
+
+### 1. Jupyter Notebook (Exploratory Data Analysis)
 1. Open the primary exploratory notebook: `unified covid prj.ipynb` locally using Jupyter Notebooks or JupyterLab.
-2. The initial codebase expects `COVID clinical trials (2).csv` to be in the identically mounted root direction. 
-3. Run all cells from `Cell 1` to process the exploratory graphs and re-generate the SQL query statistics.
+2. The initial codebase expects `COVID clinical trials (2).csv` to be present in the root directory. 
+3. Run all cells to process the exploratory graphs and re-generate the SQL query statistics.
+
+### 2. Streamlit Application (Dashboard & ML)
+To run the interactive web application containing the **Dashboard, ML Model, and Insights** sections:
+1. Make sure you have the required Python packages installed:
+   ```bash
+   pip install streamlit pandas scikit-learn plotly
+   ```
+2. Navigate to your project folder in the terminal and launch the Streamlit server:
+   ```bash
+   streamlit run app.py
+   ```
+3. Open the provided `localhost` link (default is http://localhost:8501) in your web browser.
 
 Enjoy analyzing!
